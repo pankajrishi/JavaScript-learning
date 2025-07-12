@@ -42,3 +42,32 @@ function loginUserMessage(username="sam"){
 // console.log(loginUserMessage());//Undefined
 
 // console.log(loginUserMessage());//default value "sam just logged in"
+
+
+// function calculateCartPrice(num1){
+// return num1
+// }
+// console.log(calculateCartPrice(1,2,3));//1
+
+
+// function calculateCartPrice(...num1){
+// return num1
+// }
+// console.log(calculateCartPrice(1,2,3));//[ 1, 2, 3 ] by use of spread operator
+
+
+// function calculateCartPrice(val1,val2,...num1){
+// return num1
+// }
+// console.log(calculateCartPrice(1,2,3))//[ 3 ] 1 will assign to val1 and 2 will assign to val2
+
+//how to handle object in function
+
+const user={
+    username:"pankaj",
+    id:"1234vn"
+}
+function handleObject(anyobject){
+    return(`username is: ${anyobject.username} and userid is:${anyobject.id}`)
+}
+console.log(handleObject(user));//username is: pankaj and userid is:1234vn
